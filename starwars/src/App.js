@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
+import './index.css';
 import StarWarsCharacters from './components/StarWarsCharacters';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className='App'>
+      <h1 className='Header'>React Wars</h1>
+      <div className='wrapper'>
       <StarWarsCharacters />
+      </div>
     </div>
   );
 }

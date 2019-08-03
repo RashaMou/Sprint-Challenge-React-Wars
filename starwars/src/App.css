@@ -4,5 +4,29 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-family: 'Press Start 2P', sans-serif;
 }
+
+h2 {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #f09850;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+
+ .card-details {
+   width: 90%;
+   text-align: left;
+   margin: 0 auto;
+ }
+ 
 /* write your parent styles in here for your App.js */
