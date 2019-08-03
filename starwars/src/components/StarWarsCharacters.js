@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import StarWarsCard from './StarWarsCard';
+import StarWarsCard from './StarWarsCard/StarWarsCard';
 
 function StarWarsCharacters() {
   const [character, setCharacter] = useState([]);
-  const [homeworld, setHomeworld] = useState([]);
 
   useEffect(() => {
-    // setPeople([]);
     axios
-      .get('https://swapi.co/api/people')
+      .get(`https://swapi.co/api/people/`)
       .then(data => {
-        console.log('API callresult', data.data.people)
+        console.log('API callresult', data.data.results)
         setCharacter(data.data.results)
       })
+      
       .catch(err => {
         console.log('Error:', err)
       })
@@ -28,11 +27,6 @@ function StarWarsCharacters() {
 
   )
 }
-
-
-
-
-
 
 export default StarWarsCharacters
 
