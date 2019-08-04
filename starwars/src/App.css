@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
 }
 .Header {
   color: #443e3e;
@@ -7,11 +9,18 @@
   font-family: 'Press Start 2P', sans-serif;
 }
 
-h2 {
+div > h2 {
   font-family: 'Press Start 2P', sans-serif;
   color: #f09850;
-  text-shadow: 1px 1px whitesmoke; 
+  text-shadow: 1px 1px whitesmoke;
+  padding-top: 20px; 
 }
+
+img.ui {
+  margin: 0 auto;
+ }
+ 
+
 
 .wrapper {
   width: 80%;
@@ -28,10 +37,39 @@ h2 {
    width: 90%;
    text-align: left;
    margin: 0 auto;
+   padding-bottom: 20px;
+   padding-top: 20px;
  }
  
  .attribute {
    color: #f09850;
-
 }
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div > .ui.button {
+  color: orange;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+div > .header {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: #f09850;
+  text-shadow: 1px 1px black;
+}
+
+.card-details-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+}
+
 /* write your parent styles in here for your App.js */

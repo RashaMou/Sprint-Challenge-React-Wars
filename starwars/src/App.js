@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import './App.css';
+import './App.css'; 
+import 'semantic-ui-css/semantic.min.css';
 import StarWarsCharacters from './components/StarWarsCharacters';
 
 const App = () => {
