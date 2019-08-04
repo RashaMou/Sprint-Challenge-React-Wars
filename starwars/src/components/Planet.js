@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 
 function Planet(props) {
   // console.log('planet props', props.planet);
-  const [homeworld, setHomeworld] = useState([]);
+  const [homeworld, setHomeworld] = useState([])
   useEffect(() => {
     axios
       .get(`${props.planet}`)
@@ -18,7 +18,7 @@ function Planet(props) {
   }, [])
 
   return (
-  <p>Home Planet: {homeworld}</p>
+  <p><span className='attribute'>Home Planet: </span>{homeworld}</p>
   )
 }
 

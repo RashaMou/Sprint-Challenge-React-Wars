@@ -10,6 +10,7 @@
 h2 {
   font-family: 'Press Start 2P', sans-serif;
   color: #f09850;
+  text-shadow: 1px 1px whitesmoke; 
 }
 
 .wrapper {
@@ -29,4 +30,8 @@ h2 {
    margin: 0 auto;
  }
  
+ .attribute {
+   color: #f09850;
+
+}
 /* write your parent styles in here for your App.js */
